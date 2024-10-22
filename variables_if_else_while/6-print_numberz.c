@@ -12,7 +12,7 @@ int main(void)
 
 		printf("%d", x);
 
-	print("\n");
+	printf("\n");
 
 	return (0);
 }
