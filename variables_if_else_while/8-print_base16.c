@@ -9,8 +9,13 @@ int main(void)
 {
 	int x;
 
-	for (x = 0x30; x <= 0x39; x++)
-	putchar(x);
+	for (x = 0; x <= 15; x++)
+	if (x <= 9)
+
+	putchar(x + '0');
+
+		else
+			putchar(x - 10 + 'a');
 
 	putchar('\n');
 
