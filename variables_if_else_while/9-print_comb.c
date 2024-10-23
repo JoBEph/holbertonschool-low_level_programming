@@ -14,15 +14,17 @@ int main(void)
 	{
 		putchar(x);
 
-	if (x < 57)
+		if (x < 57)
+		{
 
-	putchar(',');
+			putchar(',');
 
-	putchar(' ');
+			putchar(' ');
+		}
 
 	}
 
-		putchar('\n');
+	putchar('\n');
 
-		return (0);
+	return (0);
 }
