@@ -1,10 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* prototype _putchar */
+#include <stdio.h>
+
+/* prototype */
 
 int _putchar(char c);
 
-/* print alphabet */
-
 void print_alphabet(void);
+
+#endif
