@@ -8,7 +8,10 @@
  */
 
 int _abs(int r)
+
 {
-	printf("absolute value of int = %d\n", r);
-		return (0);
+	if (r >= 0)
+		return (r);
+	else
+		return (-r);
 }
