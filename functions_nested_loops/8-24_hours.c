@@ -14,7 +14,13 @@ void jack_bauer(void)
 	{
 		for (y = 0; y < 60; y++)
 		{
-			printf("%02d:%02d\n", x, y);
+			_putchar((x / 10) + '0');
+			_putchar((x % 10) + '0');
+			_putchar(58);
+			_putchar((y / 10) + '0');
+			_putchar((y % 10) + '0');
+			_putchar('\n');
 		}
+
 	}
 }
