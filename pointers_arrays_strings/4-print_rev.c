@@ -9,14 +9,15 @@
 void print_rev(char *s)
 {
 	int x = 0;
-	int y = 10;
-	char temp;
+	int y = 0;
 
-	for (; x < y / 2; x++)
+	while (s[x] != '\0')
 	{
-		temp = s[x];
-		s[x] = s[y - x];
-		s[y - x] = temp;
+		x++;
+	}
+	for (y = x - 1; y >= 0; y--)
+	{
+		_putchar(s[y]);
 	}
 	_putchar('\n');
 }
