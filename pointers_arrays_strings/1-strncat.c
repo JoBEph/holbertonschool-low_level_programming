@@ -18,9 +18,12 @@ char *_strncat(char *dest, char *src, int n)
 		x++;
 	}
 
-	while(src[y] != '\0' && y < n)
+	while (src[y] != '\0' && y < n)
 	{
+		dest[x] = scr[y];
+
 		x++;
+
 		y++;
 	}
 	dest[x] = '\0';
