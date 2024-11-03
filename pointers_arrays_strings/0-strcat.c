@@ -2,8 +2,8 @@
 
 /**
  * _strcat - function that concatenates two strings
- * @dest:
- * @src:
+ * @dest: pointer
+ * @src: pointer
  * Return: Always 0 (Success)
  */
 
@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 {
 	while (*dest)
 	{
-		dest ++;
+		dest++;
 	}
 	while (*src)
 	{
