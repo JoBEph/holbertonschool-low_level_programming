@@ -20,6 +20,6 @@ char *_strcpy(char *dest, char *src)
 		}
 	}
 	putchar('\n');
-	return(dest);
+	return (dest);
 }
 
