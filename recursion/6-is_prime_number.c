@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * is_prime_number -  prime number
+ * is_number -  find prime number
+ * @x: int
  * @n: int
  * Return: Always 0 (Success)
  */
-int is_prime_number(int n)
+int is_number(int n, int x)
 {
-	int x;
 
 	if (n <= 1)
 	{
@@ -22,4 +22,17 @@ int is_prime_number(int n)
 	}
 	return (1);
 }
+/**
+ * is_prime_number - print number
+ * @n: int
+ * Return: Always 0 (Success)
+ */
 
+int is_prime_number(int n)
+{
+	if (n == 0)
+	{
+		return (1);
+	}
+	return (is_number(n, 0));
+}
