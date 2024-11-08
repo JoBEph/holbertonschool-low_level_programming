@@ -3,9 +3,8 @@
 
 /**
  * main - program that multiplies two numbers
- *@nombre1: int
- *@nombre2: int
- *@somme: int
+ *@argc: int
+ *@argv: int
  * Return: Always 0 (Success)
  */
 
