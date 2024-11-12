@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *x;
-	int y, z;
+	int y;
 
 	if (str == NULL)
 	{
@@ -23,14 +23,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
-	for (z = 0; z < y; z++)
+	for (y = 0; str[y] != '\0'; y++)
 	{
-
-		x[z] = str[z];
-
+		x[y] = str[y];
 	}
-	x[z] = '\0';
-
+	x[y] = '\0';
+	
 	return (x);
 }
