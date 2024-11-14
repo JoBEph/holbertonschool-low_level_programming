@@ -9,17 +9,22 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *x;
+	char *x;
+	unsigned int y;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	x = (unsigned int*) calloc(nmemb, size);
+	x = (char *) calloc(nmemb, size);
 
 	if (x == NULL)
 	{
 		return (NULL);
+	}
+	for (y = 0; y < nmemb * size; y++)
+	{
+		x[y] = 0;
 	}
 	return (x);
 }
