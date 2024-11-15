@@ -41,19 +41,3 @@ int **alloc_grid(int width, int height)
 	}
 	return (grid);
 }
-/**
- * free_grid - function free grid x and grid
- *@grid: int
- *@height: int
- *Return: Always 0 (Success)
- */
-void free_grid(int **grid, int height)
-{
-	int x;
-
-	for (x = 0; x < height; x++)
-	{
-		free(grid[x]);
-	}
-	free(grid);
-}
