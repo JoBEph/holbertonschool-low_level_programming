@@ -9,7 +9,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int x, y;
+	int x, y, z;
 	int **grid;
 
 	if (width <= 0 || height <= 0)
@@ -27,6 +27,11 @@ int **alloc_grid(int width, int height)
 		grid[x] = (int *)malloc(sizeof(int) * width);
 		if (grid[x] == NULL)
 		{
+		for (z = 0; z < x; x++)
+		{
+			free(grid[z]);
+		}
+			free(grid);
 			return (NULL);
 		}
 		for (y = 0; y < width; y++)
@@ -35,4 +40,20 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (grid);
+}
+/**
+ * free_grid - function free grid x and grid
+ *@grid: int
+ *@height: int
+ *Return: Always 0 (Success)
+ */
+void free_grid(int **grid, int height)
+{
+	int x;
+
+	for (x = 0; x < height; x++)
+	{
+		free(grid[x]);
+	}
+	free(grid);
 }
