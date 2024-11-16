@@ -2,12 +2,12 @@
 #define DOG_H
 
 /**
- * struct my_struct - Short description
+ * struct dog - Short description
  *@name: char
  *@age: float
  *@owner: char
- *
- * Description: Define a new type struct dog with the following elements
+ *Description: Define a new type struct dog with the following elements
+ *Return: 0 always
  */
 
 struct dog
