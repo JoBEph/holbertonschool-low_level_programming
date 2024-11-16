@@ -10,7 +10,7 @@
  *Return: 0 always
  */
 
-struct dog
+struct dog_t
 {
 	char *name;
 	char *owner;
