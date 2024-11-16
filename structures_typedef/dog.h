@@ -6,7 +6,7 @@
  *@name: char
  *@age: float
  *@owner: char
- *Description: Define a new type struct dog with the following elements
+ *Description: Define a new type struct dog_t with the following elements
  *Return: 0 always
  */
 
@@ -17,6 +17,6 @@ struct dog_t
 	float age;
 };
 /* prototypes */
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
+void init_dog(struct dog_t *d, char *name, float age, char *owner);
+void print_dog(struct dog_t *d);
 #endif
