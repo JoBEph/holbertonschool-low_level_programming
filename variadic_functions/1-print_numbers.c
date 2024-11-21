@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		numbers = (int) va_arg(xlist, int);
 		printf("%d", numbers);
 
-		if (separator != NULL)
+		if (separator != NULL && x != (n - 1))
 			printf("%s", separator);
 	}
 	va_end(xlist);
