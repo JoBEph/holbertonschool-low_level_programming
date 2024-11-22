@@ -13,13 +13,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list xlist;
 
 	va_start(xlist, n);
-	
+
 	for (x = 0; x < n; x++)
 	{
 		strings = va_arg(xlist, const char *);
 		if (strings == NULL)
 			printf("(nil)");
-		
+
 		else
 			printf("%s", strings);
 
